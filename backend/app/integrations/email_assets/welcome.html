@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome to LegacyVault</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Outfit:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#4edea3",
+                    "on-tertiary-fixed": "#002113",
+                    "tertiary-fixed": "#6ffbbe",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-container": "#008f62",
+                    "on-primary-fixed-variant": "#414658",
+                    "surface-container-lowest": "#010f1f",
+                    "on-secondary-container": "#b3b1ff",
+                    "surface-container-highest": "#273647",
+                    "secondary-fixed-dim": "#c3c0ff",
+                    "on-tertiary": "#003824",
+                    "surface": "#051424",
+                    "tertiary-container": "#00150b",
+                    "primary": "#c1c5dc",
+                    "on-secondary-fixed-variant": "#3323cc",
+                    "inverse-primary": "#595e71",
+                    "on-primary-container": "#777c90",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "on-surface": "#d4e4fa",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "surface-variant": "#273647",
+                    "inverse-on-surface": "#233143",
+                    "on-background": "#d4e4fa",
+                    "error-container": "#93000a",
+                    "on-primary-fixed": "#161b2b",
+                    "surface-dim": "#051424",
+                    "primary-container": "#0b1020",
+                    "outline-variant": "#46464c",
+                    "on-primary": "#2b3041",
+                    "background": "#051424",
+                    "surface-bright": "#2c3a4c",
+                    "surface-container": "#122131",
+                    "on-error": "#690005",
+                    "inverse-surface": "#d4e4fa",
+                    "secondary": "#c3c0ff",
+                    "on-secondary": "#1d00a5",
+                    "secondary-container": "#3626ce",
+                    "outline": "#909097",
+                    "primary-fixed-dim": "#c1c5dc",
+                    "on-secondary-fixed": "#0f0069",
+                    "secondary-fixed": "#e2dfff",
+                    "surface-container-low": "#0d1c2d",
+                    "error": "#ffb4ab",
+                    "surface-tint": "#c1c5dc",
+                    "surface-container-high": "#1c2b3c",
+                    "on-surface-variant": "#c7c6cd",
+                    "primary-fixed": "#dee1f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "xl": "80px",
+                    "sm": "12px",
+                    "container-max": "1280px",
+                    "xs": "4px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "lg": "48px",
+                    "md": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Outfit"],
+                    "display-lg-mobile": ["Outfit"],
+                    "body-md": ["Inter"],
+                    "headline-xl": ["Outfit"],
+                    "headline-xl-mobile": ["Outfit"],
+                    "label-sm": ["Inter"],
+                    "display-lg": ["Outfit"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #051424;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .glass-card {
+            background: rgba(18, 33, 49, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .inner-glow {
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface">
+<!-- TopAppBar Structure -->
+<header class="bg-surface/80 dark:bg-surface/80 backdrop-blur-xl docked full-width top-0 sticky flex justify-between items-center px-margin-mobile w-full max-w-container-max mx-auto py-4 border-b border-white/10 z-50">
+<div class="flex items-center gap-3">
+<span class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface tracking-tight">LegacyVault</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+</div>
+</header>
+<main class="max-w-[600px] mx-auto px-4 py-lg">
+<!-- Hero Section -->
+<section class="text-center mb-lg relative">
+<div class="absolute inset-0 bg-secondary/10 blur-[100px] rounded-full -z-10"></div>
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-md text-on-surface">
+                Your legacy is now secure.
+            </h1>
+<div class="w-full aspect-[16/9] rounded-xl overflow-hidden mb-md shadow-2xl border border-white/10">
+<img alt="Secure Digital Vault" class="w-full h-full object-cover" data-alt="A sophisticated digital vault interface with a deep obsidian color palette and glowing indigo circuit patterns. The scene is illuminated by soft, cinematic lighting that highlights a crystalline lock symbol in the center. The aesthetic is high-end fintech, conveying a sense of unshakeable security, permanence, and generational wealth through modern glassmorphism and tactile digital elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfbft0Z6S5kk5bu6jUcZzMrNXAGP8TDfptwzBSU2Xo-3hNFEcJBMqZdUJfD0fpOWEawxmkBIRxaT_Yv1M_luwi5n6V8FGH3CN5C5lxPKxZdA7uom7aSpSXrHBVaf46k7uL26Dcz7i3q5jcNn-K2xzNIgofWtEyP-97GAko9i6--cI0B5cqsOjsJN82a3d51Ptg6H_EuUmP4xkapH-cZMvlEQEosQEAtNH5EAvR-D3QKft6LiR1w8eaTZVOuw_khRReLc3rcJhv7Vtr"/>
+</div>
+</section>
+<!-- Body Text -->
+<section class="mb-lg">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
+                Welcome to a new era of digital stewardship. LegacyVault was built for individuals who understand that true wealth isn't just about the assets you hold, but how you protect and pass them on.
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant/80">
+                In an increasingly fragmented digital world, your final wishes and most sensitive assets deserve a sanctuary that is as permanent as your legacy. We are honored to be your chosen guardians.
+            </p>
+</section>
+<!-- Key Steps Bento Grid -->
+<section class="grid grid-cols-1 gap-4 mb-lg">
+<div class="glass-card p-md rounded-xl inner-glow flex items-start gap-4 hover:bg-white/5 transition-all duration-300">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1 text-lg">1. Secure your assets</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Upload legal documents, private keys, and encrypted memories into your fortified vault.</p>
+</div>
+</div>
+<div class="glass-card p-md rounded-xl inner-glow flex items-start gap-4 hover:bg-white/5 transition-all duration-300">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary" data-icon="family_history" style="font-variation-settings: 'FILL' 1;">family_history</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1 text-lg">2. Assign your heirs</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Designate the specific individuals who will inherit your digital and physical estate.</p>
+</div>
+</div>
+<div class="glass-card p-md rounded-xl inner-glow flex items-start gap-4 hover:bg-white/5 transition-all duration-300">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary" data-icon="rule" style="font-variation-settings: 'FILL' 1;">rule</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1 text-lg">3. Set your rules</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Configure precise conditions for the release of your assets, ensuring your intent is perfectly executed.</p>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<div class="text-center mb-xl">
+<button class="bg-secondary text-on-secondary px-lg py-4 rounded-full font-label-md text-label-md hover:shadow-[0_0_20px_rgba(195,192,255,0.4)] transition-all duration-300 inner-glow active:scale-95">
+                Enter the Vault
+            </button>
+</div>
+<!-- Footer -->
+<footer class="border-t border-white/5 pt-lg pb-xl">
+<div class="flex justify-center gap-6 mb-md">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="help">help</span>
+</a>
+</div>
+<div class="text-center space-y-4">
+<div class="inline-flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="lock">lock</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">End-to-End Encryption Enabled</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant/40 max-w-[400px] mx-auto leading-relaxed">
+                    © 2024 LegacyVault Global. All rights reserved. Your data is protected by military-grade encryption. Access to your vault is restricted solely to you and your verified heirs upon the meeting of your specified conditions.
+                </p>
+<div class="flex justify-center gap-4 text-[10px] font-medium text-on-surface-variant/30 uppercase tracking-widest">
+<a class="hover:text-on-surface" href="#">Privacy Policy</a>
+<a class="hover:text-on-surface" href="#">Terms of Service</a>
+<a class="hover:text-on-surface" href="#">Security Whitepaper</a>
+</div>
+</div>
+</footer>
+</main>
+<!-- Interactive script for subtle atmospheric glow -->
+<script>
+        document.addEventListener('mousemove', (e) => {
+            const cards = document.querySelectorAll('.glass-card');
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>
