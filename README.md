@@ -95,7 +95,7 @@ flowchart TB
     PAY -->|webhook charge.success| D7
 ```
 
-**Principles** (see `AGENTS.md`): domain-driven layout, routes only validate + delegate,
+**Principles**: domain-driven layout, routes only validate + delegate,
 business rules in services, DB access in repositories, Pydantic request/response schemas,
 sensitive data encrypted before persistence, UUID + opaque public IDs, soft deletes, audit logging.
 
@@ -466,6 +466,3 @@ Firebase JSON) are git-ignored and excluded from upload by `rignore`.
 - **No leaks:** encrypted fields and internal UUIDs never returned; opaque `public_id`s used externally; audit trail for sensitive actions.
 - **Graceful degradation:** email/push degrade to no-op when unconfigured; payments fail closed (503) when unconfigured.
 
----
-
-🤖 Backend built with [Claude Code](https://claude.com/claude-code).
