@@ -2,7 +2,7 @@
   <img src="docs/assets/legacyvault-banner.png" alt="LegacyVault" width="460" />
 </p>
 
-<h1 align="center">LegacyVault — Digital Estate & Legacy Platform (Backend)</h1>
+<h1 align="center">LegacyVault — Digital Estate & Legacy Platform</h1>
 
 > **Store once. Protect forever. Transfer securely.**
 > A secure, mobile-first digital estate platform: store financial accounts, crypto,
